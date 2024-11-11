@@ -17,9 +17,8 @@ const printId = (id: string | number): string | number => {
   return `Your ID is ${id}`;
 };
 
-printId('s98tjkfd'); // Your ID is s98tjkfd
-printId(843787);     // Your ID is 843787
-
+printId("s98tjkfd"); // Your ID is s98tjkfd
+printId(843787); // Your ID is 843787
 ```
 
 Here you can send an id parameter in string value or number. and also the function printId also returns a `string` or a `number`.
@@ -28,28 +27,28 @@ Here you can send an id parameter in string value or number. and also the functi
 
 ### What are Intersection Types?
 
-An Intersection Type in Typescript allows a variable to have multiple types. It combines properties from multiple types into one. This is useful when you want to ensure that a value satisfies multiple type  constraints simultaneously.
+An Intersection Type in Typescript allows a variable to have multiple types. It combines properties from multiple types into one. This is useful when you want to ensure that a value satisfies multiple type constraints simultaneously.
 
 ### Here is an example, if you want to combine two interfaces
 
 ```typescript
-Interface Person {
+
+interface Person {
 name: string;
 age: number;
 }
 
-Interface  Employee {
+interface  Employee {
 employeeId: number;
 }
 
 
-Type EmployeePerson = Person && Employee;
+type EmployeePerson = Person && Employee;
 
 const employee:  EmployeePerson = {
 name:"Sujon", age: 22, employeeId: 30}
 
 ```
-
 
 Here, EmployeePerson is an intersection of Person and Employee. That means EmployeePerson must have the interface of Person and Employee.
 
