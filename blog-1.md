@@ -17,8 +17,8 @@ const printId = (id: string | number): string | number => {
   return `Your ID is ${id}`;
 };
 
-printId('s98tjkfd');
-printId(843787);
+printId('s98tjkfd'); // Your ID is s98tjkfd
+printId(843787);     // Your ID is 843787
 
 ```
 
@@ -45,7 +45,7 @@ employeeId: number;
 
 Type EmployeePerson = Person && Employee;
 
-const employee:  EmployeePerson ={
+const employee:  EmployeePerson = {
 name:"Sujon", age: 22, employeeId: 30}
 
 ```
